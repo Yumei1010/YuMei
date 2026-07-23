@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ddrsjnsba5vmh"]
+
+[ext_resource type="Script" path="res://scripts/menu/main/Main.cs" id="1_main"]
+[ext_resource type="PackedScene" uid="uid://bxh5p31v53e2y" path="res://scenes/entities/desktop_pet/desktop_pet.tscn" id="2_pet"]
+
+[node name="Main" type="Node" unique_id=929669509]
+script = ExtResource("1_main")
+
+[node name="DesktopPet" parent="." unique_id=1055560731 instance=ExtResource("2_pet")]
+
+[node name="StatusIndicator" type="StatusIndicator" parent="." unique_id=814994006]
+tooltip = "YuMei"
+
+[node name="PopupMenu" type="PopupMenu" parent="." unique_id=1965133693]
+item_count = 1
+item_0/text = "关闭"
+item_0/id = 0

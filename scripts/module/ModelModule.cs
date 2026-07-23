@@ -6,6 +6,8 @@ using GFramework.Game.setting;
 using GFramework.Godot.setting;
 using GFramework.Godot.setting.data;
 using GFrameworkTemplate.scripts.data.setting;
+using GFrameworkTemplate.scripts.entities.desktop_pet;
+using GFrameworkTemplate.scripts.model.desktop_pet;
 
 namespace GFrameworkTemplate.scripts.module;
 
@@ -28,5 +30,6 @@ public class ModelModule : AbstractModule
                     it.RegisterApplicator(new GodotLocalizationSettings(it, new LocalizationMap()));
                 })
         );
+        architecture.RegisterModel(new DesktopPetModel());
     }
 }

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bxh5p31v53e2y"]
+
+[ext_resource type="Script" uid="uid://xn8tw5bfk2ul" path="res://scripts/entities/desktop_pet/DesktopPet.cs" id="1_deskpet"]
+
+[node name="DesktopPet" type="Button" unique_id=680934563]
+offset_right = 128.0
+offset_bottom = 192.0
+script = ExtResource("1_deskpet")
+
+[node name="PopupMenu" type="PopupMenu" parent="." unique_id=297012365]
+item_count = 1
+item_0/text = "关闭"
+item_0/id = 0
